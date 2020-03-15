@@ -1,0 +1,41 @@
+.container{
+    height:200px;
+    width: 400px;
+    margin-left: 600px;
+    margin-top:150px;
+}
+
+.table_header{
+    width:100%;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-info{
+    margin-left:350px;
+}
+.btn2{
+    margin-left:500px;
+}
+
+@media only screen and (max-width: 600px){
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .btn-info{
+        margin-left:150px;
+    }
+    .btn2{
+        margin-left:300px;
+    }  
+    .container{
+        height:200px;
+        width: 400px;
+        margin-left: 300px;
+        margin-top:150px;
+    }
+}

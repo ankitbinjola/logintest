@@ -1,0 +1,65 @@
+<div class=btn-container><button type="button" class="btn btn-info" (click)="logout()">Back</button>
+<button type="button" class="btn btn-info btn2" (click)="logout()">Logout</button>
+</div>
+
+
+<div class="container">
+
+<select id="cars" (change)="onSelect($event)">
+  <option >Select Machine</option>
+  <option value="m1">M1</option>
+  <option value="m2">M2</option>
+  <option value="m3">M3</option>
+  <option value="m4">M4</option>
+</select>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<button type="button" class="btn btn-primary" (click)="onClick()">Generic Issues</button>
+</div>
+
+
+<div *ngIf="showTable">
+
+  <table class="table">
+    <!-- <thead class="thead-dark">
+      <tr><th>Issues- Improvement Oppurtunities</th></tr>
+    </thead> -->
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Serial No</th>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">Issue Observed By</th>
+        <th scope="col">Issue Description</th>
+        <th scope="col">Priority</th>
+        <th scope="col">Shift</th>
+        <th scope="col">Issue Owner</th>
+        <th scope="col">Current Status</th>
+        <th scope="col">Final Resolution</th>
+      
+      </tr>
+      
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{a}}</td>
+        <td>{{b}}</td>
+        <td>{{c}}</td>
+        <td>{{d}}</td>
+        <td>{{e}}</td>
+        <td>{{f}}</td>
+        <td>{{g}}</td>
+        <td>{{h}}</td>
+        <td>{{i}}</td>
+        <td>{{j}}</td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
+  
+ 
+</div>
